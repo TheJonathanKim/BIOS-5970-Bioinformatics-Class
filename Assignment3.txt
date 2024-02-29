@@ -7,4 +7,4 @@ grep -nv "notapanda" pandas.txt > panda_names.txt
 sed -n '1p ;6p ;17p' pandas.txt > lines_1_6_17.txt
 grep -h "x" pandas.txt > x_lines.txt
 awk '{print $5}' pandas.txt | sort | uniq -u >> unique_places.txt
-awk '$4 <= 10 {print $1,$4}' pandas.txt >> young_pandas.txt
+sort -k 4n pandas.txt | awk '$4 <= 10 {print $1,$4}' >> young_pandas.txt
