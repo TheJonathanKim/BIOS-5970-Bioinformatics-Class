@@ -1,0 +1,527 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: infile.txt
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 568648
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 55 sequences with 807 amino-acid sites
+Number of constant sites: 357 (= 44.2379% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 357 (= 44.2379% of all sites)
+Number of parsimony informative sites: 353
+Number of distinct site patterns: 568
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HIVb+F+R3
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HIVb+F+R3        -12796.046   25852.093 -   0.0241   25902.477 +   0.0548   26462.225 +    0.726
+HIVb+F+R4        -12790.344   25844.689 +    0.976   25896.784 +    0.945   26464.207 +    0.269
+JTT+R3           -12865.028   25952.057 - 4.73e-24   25987.832 -  1.6e-20   26473.016 -  0.00329
+JTT+R4           -12859.672   25945.344 - 1.36e-22   25982.521 - 2.28e-19   26475.689 - 0.000865
+JTTDCMut+R3      -12866.808   25955.616 - 7.98e-25   25991.392 -  2.7e-21   26476.575 - 0.000555
+JTT+I+G4         -12874.829   25967.659 - 1.94e-27   26002.063 -  1.3e-23   26479.231 - 0.000147
+JTTDCMut+R4      -12861.490   25948.979 -  2.2e-23   25986.157 -  3.7e-20   26479.325 -  0.00014
+JTT+G4           -12879.545   25975.090 - 4.71e-29   26008.821 - 4.44e-25   26481.969 - 3.74e-05
+JTTDCMut+I+G4    -12877.022   25972.045 - 2.16e-28   26006.449 - 1.45e-24   26483.617 - 1.64e-05
+JTT+F+R3         -12807.154   25874.308 - 3.61e-07   25924.692 - 8.23e-07   26484.440 - 1.09e-05
+JTTDCMut+G4      -12881.891   25979.782 - 4.51e-30   26013.512 - 4.25e-26   26486.660 - 3.59e-06
+JTT+F+R4         -12801.767   25867.535 - 1.07e-05   25919.630 - 1.03e-05   26487.053 - 2.95e-06
+HIVb+F+I+G4      -12817.272   25890.544 - 1.08e-10   25939.252 - 5.67e-10   26491.289 - 3.54e-07
+JTTDCMut+F+R3    -12811.524   25883.049 - 4.57e-09   25933.434 - 1.04e-08   26493.181 - 1.38e-07
+JTT+F+I+G4       -12818.653   25893.306 - 2.71e-11   25942.014 - 1.43e-10   26494.051 - 8.91e-08
+JTTDCMut+F+R4    -12806.106   25876.211 - 1.39e-07   25928.306 - 1.35e-07   26495.730 - 3.85e-08
+JTT+F+G4         -12823.308   25900.615 -    7e-13   25948.498 - 5.57e-12   26496.668 - 2.41e-08
+HIVb+F+G4        -12825.555   25905.111 - 7.39e-14   25952.993 - 5.89e-13   26501.163 - 2.54e-09
+JTTDCMut+F+I+G4  -12823.255   25902.510 - 2.71e-13   25951.218 - 1.43e-12   26503.255 - 8.93e-10
+JTTDCMut+F+G4    -12828.090   25910.180 - 5.86e-15   25958.062 - 4.67e-14   26506.232 - 2.02e-10
+FLU+F+R3         -12823.690   25907.380 - 2.38e-14   25957.765 - 5.41e-14   26517.513 - 7.16e-13
+HIVb+R3          -12887.717   25997.433 - 6.63e-34   26033.209 - 2.24e-30   26518.392 - 4.61e-13
+FLU+F+R4         -12817.945   25899.890 - 1.01e-12   25951.985 - 9.74e-13   26519.409 - 2.78e-13
+HIVb+R4          -12882.011   25990.023 - 2.69e-32   26027.200 - 4.53e-29   26520.368 - 1.72e-13
+FLU+F+I+G4       -12838.061   25932.122 - 1.01e-19   25980.830 - 5.31e-19   26532.867 - 3.32e-16
+FLU+F+G4         -12844.490   25942.979 - 4.42e-22   25990.861 - 3.52e-21   26539.031 - 1.52e-17
+HIVb+I+G4        -12906.520   26031.040 - 3.34e-41   26065.445 - 2.24e-37   26542.613 - 2.54e-18
+HIVb+G4          -12914.808   26045.616 - 2.28e-44   26079.346 - 2.15e-40   26552.495 - 1.82e-20
+HIVw+F+R3        -12855.108   25970.216 - 5.39e-28   26020.600 - 1.23e-27   26580.348 - 1.62e-26
+HIVw+F+R4        -12848.657   25961.314 - 4.62e-26   26013.409 - 4.47e-26   26580.832 - 1.27e-26
+FLU+R3           -12919.514   26061.028 - 1.03e-47   26096.803 - 3.48e-44   26581.987 - 7.16e-27
+FLU+R4           -12914.109   26054.218 -  3.1e-46   26091.395 -  5.2e-43   26584.563 - 1.97e-27
+FLU+I+G4         -12933.554   26085.108 - 6.07e-53   26119.512 - 4.08e-49   26596.680 - 4.62e-30
+FLU+G4           -12939.755   26095.509 - 3.34e-55   26129.240 - 3.15e-51   26602.388 - 2.66e-31
+HIVw+F+I+G4      -12875.572   26007.145 - 5.16e-36   26055.853 - 2.72e-35   26607.890 -  1.7e-32
+HIVw+F+G4        -12884.085   26022.170 - 2.82e-39   26070.052 - 2.24e-38   26618.222 - 9.69e-35
+mtVer+F+R3       -12893.750   26047.500 -  8.9e-45   26097.885 - 2.03e-44   26657.632 - 2.68e-43
+mtVer+F+R4       -12889.125   26042.250 - 1.23e-43   26094.345 - 1.19e-43   26661.768 - 3.39e-44
+mtVer+F+I+G4     -12912.910   26081.820 - 3.14e-52   26130.528 - 1.65e-51   26682.565 - 1.03e-48
+cpREV+R4         -12967.492   26160.984 - 2.03e-69   26198.161 - 3.41e-66   26691.329 - 1.29e-50
+cpREV+R3         -12975.791   26173.581 - 3.73e-72   26209.357 - 1.26e-68   26694.540 - 2.59e-51
+cpREV+F+R4       -12906.268   26076.535 - 4.41e-51   26128.630 - 4.27e-51   26696.054 - 1.22e-51
+mtVer+F+G4       -12923.357   26100.713 - 2.48e-56   26148.595 - 1.97e-55   26696.765 - 8.53e-52
+cpREV+I+G4       -12986.374   26190.748 - 6.97e-76   26225.153 - 4.69e-72   26702.320 -  5.3e-53
+cpREV+F+R3       -12917.031   26094.063 - 6.89e-55   26144.447 - 1.57e-54   26704.195 - 2.08e-53
+cpREV+G4         -12993.530   26203.059 - 1.48e-78   26236.790 - 1.39e-74   26709.938 - 1.18e-54
+WAG+I+G4         -12993.140   26204.279 - 8.04e-79   26238.684 - 5.41e-75   26715.851 - 6.12e-56
+WAG+R3           -12987.023   26196.045 - 4.94e-77   26231.821 - 1.67e-73   26717.004 - 3.44e-56
+WAG+R4           -12980.726   26187.452 - 3.62e-75   26224.630 - 6.09e-72   26717.798 - 2.31e-56
+cpREV+F+I+G4     -12930.925   26117.850 - 4.71e-60   26166.558 - 2.48e-59   26718.595 - 1.55e-56
+WAG+G4           -12999.109   26214.217 - 5.59e-81   26247.948 - 5.26e-77   26721.096 - 4.44e-57
+cpREV+F+G4       -12939.656   26133.311 - 2.07e-63   26181.194 - 1.65e-62   26729.363 - 7.12e-59
+mtMet+F+R3       -12932.242   26124.483 - 1.71e-61   26174.868 - 3.89e-61   26734.615 - 5.15e-60
+mtMet+F+R4       -12928.507   26121.013 - 9.69e-61   26173.108 - 9.38e-61   26740.532 - 2.67e-61
+mtMet+F+I+G4     -12950.475   26156.949 - 1.52e-68   26205.657 - 8.02e-68   26757.695 - 5.01e-65
+mtMet+F+G4       -12960.213   26174.426 - 2.44e-72   26222.308 - 1.94e-71   26770.478 -  8.4e-68
+WAG+F+R3         -12954.232   26168.463 - 4.82e-71   26218.848 -  1.1e-70   26778.595 - 1.45e-69
+WAG+F+R4         -12947.601   26159.203 - 4.94e-69   26211.297 - 4.78e-69   26778.721 - 1.36e-69
+WAG+F+I+G4       -12961.453   26178.906 -  2.6e-73   26227.614 - 1.37e-72   26779.651 - 8.56e-70
+WAG+F+G4         -12966.976   26187.952 - 2.82e-75   26235.834 - 2.25e-74   26784.004 - 9.71e-71
+HIVw+R3          -13038.331   26298.663 - 2.57e-99   26334.438 - 8.71e-96   26819.621 - 1.79e-78
+HIVw+R4          -13032.688   26291.375 - 9.83e-98   26328.553 - 1.65e-94   26821.721 - 6.27e-79
+HIVw+I+G4        -13056.360   26330.720 - 2.81e-106   26365.125 - 1.89e-102   26842.292 - 2.14e-83
+HIVw+G4          -13067.393   26350.786 - 1.24e-110   26384.516 - 1.16e-106   26857.665 - 9.82e-87
+VT+I+G4          -13067.444   26352.888 - 4.32e-111   26387.293 - 2.9e-107   26864.460 - 3.28e-88
+VT+G4            -13071.677   26359.355 - 1.7e-112   26393.085 - 1.6e-108   26866.234 - 1.35e-88
+VT+R3            -13061.977   26345.954 - 1.38e-109   26381.729 - 4.69e-106   26866.913 - 9.63e-89
+VT+R4            -13056.348   26338.697 - 5.21e-108   26375.874 - 8.76e-105   26869.042 - 3.32e-89
+LG+I+G4          -13077.170   26372.341 - 2.58e-115   26406.745 - 1.73e-111   26883.913 - 1.96e-92
+LG+R4            -13065.287   26356.574 - 6.84e-112   26393.751 - 1.15e-108   26886.919 - 4.36e-93
+LG+R3            -13071.998   26365.996 - 6.15e-114   26401.772 - 2.08e-110   26886.955 - 4.28e-93
+LG+G4            -13082.320   26380.639 - 4.07e-117   26414.370 - 3.83e-113   26887.518 - 3.23e-93
+mtInv+F+R3       -13009.175   26278.351 - 6.62e-95   26328.735 - 1.51e-94   26888.483 -    2e-93
+mtInv+F+R4       -13005.304   26274.609 -  4.3e-94   26326.704 - 4.16e-94   26894.128 - 1.19e-94
+LG+R5            -13063.985   26357.970 - 3.4e-112   26396.581 - 2.79e-109   26897.702 - 1.99e-95
+mtInv+F+I+G4     -13025.359   26306.718 - 4.58e-101   26355.426 - 2.41e-100   26907.464 - 1.51e-97
+mtInv+F+G4       -13034.348   26322.696 - 1.55e-104   26370.579 - 1.24e-103   26918.749 - 5.34e-100
+VT+F+I+G4        -13036.884   26329.768 - 4.53e-106   26378.476 - 2.38e-105   26930.513 - 1.49e-102
+VT+F+R3          -13030.394   26320.788 - 4.03e-104   26371.172 - 9.19e-104   26930.920 - 1.22e-102
+mtREV+F+R3       -13030.542   26321.084 - 3.48e-104   26371.468 - 7.93e-104   26931.216 - 1.05e-102
+VT+F+R4          -13024.361   26312.722 - 2.28e-102   26364.817 - 2.2e-102   26932.240 - 6.28e-103
+VT+F+G4          -13041.132   26336.264 - 1.76e-107   26384.146 - 1.4e-106   26932.316 - 6.05e-103
+mtREV+F+R4       -13025.139   26314.277 - 1.05e-102   26366.372 - 1.01e-102   26933.796 - 2.89e-103
+mtREV+F+I+G4     -13047.071   26350.141 - 1.71e-110   26398.849 - 8.98e-110   26950.887 - 5.61e-107
+LG+F+R4          -13035.949   26335.897 - 2.11e-107   26387.992 - 2.05e-107   26955.416 - 5.83e-108
+LG+F+R3          -13043.298   26346.596 -   1e-109   26396.981 - 2.29e-109   26956.728 - 3.02e-108
+LG+F+I+G4        -13050.219   26356.437 - 7.32e-112   26405.145 - 3.86e-111   26957.183 - 2.41e-108
+LG+R2            -13114.218   26446.436 - 2.1e-131   26480.840 - 1.41e-127   26958.008 - 1.6e-108
+LG+F+G4          -13055.453   26364.906 - 1.06e-113   26412.788 - 8.44e-113   26960.958 - 3.65e-109
+mtREV+F+G4       -13058.187   26370.373 - 6.89e-115   26418.256 - 5.49e-114   26966.425 - 2.37e-110
+Dayhoff+F+R3     -13095.105   26450.210 - 3.18e-132   26500.594 - 7.24e-132   27060.342 - 9.58e-131
+DCMut+F+R3       -13095.441   26450.881 - 2.27e-132   26501.266 - 5.17e-132   27061.013 - 6.85e-131
+Dayhoff+F+R4     -13091.296   26446.591 - 1.94e-131   26498.686 - 1.88e-131   27066.110 - 5.35e-132
+DCMut+F+R4       -13091.610   26447.221 - 1.42e-131   26499.316 - 1.37e-131   27066.740 - 3.91e-132
+Dayhoff+F+I+G4   -13110.660   26477.320 - 4.12e-138   26526.028 - 2.17e-137   27078.065 - 1.36e-134
+DCMut+F+I+G4     -13110.921   26477.841 - 3.18e-138   26526.549 - 1.67e-137   27078.587 - 1.05e-134
+Dayhoff+R3       -13171.042   26564.085 - 5.95e-157   26599.860 - 2.02e-153   27085.043 - 4.14e-136
+DCMut+R3         -13171.725   26565.450 - 3.01e-157   26601.226 - 1.02e-153   27086.409 - 2.09e-136
+Dayhoff+R4       -13167.591   26561.182 - 2.54e-156   26598.359 - 4.27e-153   27091.527 - 1.62e-137
+DCMut+R4         -13168.256   26562.513 - 1.31e-156   26599.690 - 2.19e-153   27092.859 - 8.32e-138
+Dayhoff+F+G4     -13121.426   26496.852 - 2.37e-142   26544.734 - 1.88e-141   27092.904 - 8.14e-138
+DCMut+F+G4       -13121.627   26497.254 - 1.93e-142   26545.137 - 1.54e-141   27093.306 - 6.65e-138
+Dayhoff+I+G4     -13186.413   26590.826 - 9.28e-163   26625.231 - 6.24e-159   27102.398 - 7.06e-140
+DCMut+I+G4       -13187.015   26592.030 - 5.08e-163   26626.435 - 3.42e-159   27103.602 - 3.87e-140
+mtMAM+F+R4       -13112.610   26489.221 - 1.07e-140   26541.316 - 1.04e-140   27108.739 - 2.96e-141
+mtMAM+F+R3       -13122.864   26505.727 - 2.8e-144   26556.112 - 6.37e-144   27115.859 - 8.43e-143
+Dayhoff+G4       -13196.900   26609.799 - 7.04e-167   26643.530 - 6.63e-163   27116.678 - 5.6e-143
+DCMut+G4         -13197.437   26610.875 - 4.11e-167   26644.605 - 3.87e-163   27117.754 - 3.27e-143
+mtMAM+F+I+G4     -13140.619   26537.239 - 4.02e-151   26585.947 - 2.12e-150   27137.984 - 1.32e-147
+mtMAM+F+G4       -13156.462   26566.924 - 1.44e-157   26614.806 - 1.15e-156   27162.976 - 4.95e-153
+mtZOA+F+R3       -13162.951   26585.901 - 1.09e-161   26636.286 - 2.48e-161   27196.033 - 3.28e-160
+mtZOA+F+R4       -13158.578   26581.156 - 1.17e-160   26633.251 - 1.13e-160   27200.675 - 3.22e-161
+mtZOA+F+I+G4     -13182.992   26621.984 - 1.59e-169   26670.692 - 8.38e-169   27222.730 - 5.24e-166
+mtZOA+F+G4       -13195.944   26645.889 - 1.03e-174   26693.771 - 8.16e-174   27241.941 - 3.53e-170
+rtREV+F+R4       -13201.464   26666.928 - 2.77e-179   26719.023 - 2.68e-179   27286.447 - 7.64e-180
+rtREV+F+R3       -13208.461   26676.922 - 1.87e-181   26727.307 - 4.26e-181   27287.054 - 5.64e-180
+rtREV+F+I+G4     -13215.902   26687.805 - 8.11e-184   26736.513 - 4.27e-183   27288.550 - 2.67e-180
+rtREV+F+G4       -13223.063   26700.126 - 1.71e-186   26748.008 - 1.36e-185   27296.178 - 5.89e-182
+Blosum62+I+G4    -13298.110   26814.219 - 2.87e-211   26848.624 - 1.93e-207   27325.791 - 2.19e-188
+PMB+F+I+G4       -13234.732   26725.465 - 5.39e-192   26774.173 - 2.84e-191   27326.210 - 1.77e-188
+PMB+F+G4         -13239.226   26732.452 - 1.64e-193   26780.334 - 1.3e-192   27328.504 - 5.63e-189
+rtREV+I+G4       -13299.808   26817.616 - 5.26e-212   26852.021 - 3.53e-208   27329.189 -   4e-189
+PMB+F+R3         -13230.005   26720.009 - 8.24e-191   26770.394 - 1.88e-190   27330.141 - 2.48e-189
+Blosum62+G4      -13303.724   26823.448 - 2.85e-213   26857.178 - 2.68e-209   27330.327 - 2.26e-189
+PMB+F+R4         -13223.984   26711.968 - 4.59e-189   26764.063 - 4.45e-189   27331.487 - 1.27e-189
+rtREV+R3         -13294.968   26811.936 -   9e-211   26847.711 - 3.05e-207   27332.894 - 6.27e-190
+Blosum62+R3      -13295.163   26812.325 - 7.41e-211   26848.101 - 2.51e-207   27333.284 - 5.16e-190
+rtREV+R4         -13288.471   26802.942 - 8.08e-209   26840.120 - 1.36e-205   27333.288 - 5.15e-190
+rtREV+G4         -13306.397   26828.794 - 1.97e-214   26862.524 - 1.85e-210   27335.673 - 1.56e-190
+PMB+I+G4         -13303.605   26825.210 - 1.18e-213   26859.615 - 7.93e-210   27336.783 - 8.97e-191
+Blosum62+R4      -13290.242   26806.485 - 1.37e-209   26843.662 - 2.31e-206   27336.830 - 8.76e-191
+PMB+G4           -13308.056   26832.113 - 3.74e-215   26865.844 - 3.52e-211   27338.992 - 2.97e-191
+PMB+R3           -13300.162   26822.323 -   5e-213   26858.099 - 1.69e-209   27343.282 - 3.48e-192
+LG+I             -13311.158   26838.316 - 1.68e-216   26872.047 - 1.58e-212   27345.195 - 1.34e-192
+PMB+R4           -13294.552   26815.105 - 1.85e-211   26852.282 - 3.1e-208   27345.450 - 1.18e-192
+Blosum62+F+I+G4  -13252.413   26760.826 - 1.13e-199   26809.534 - 5.95e-199   27361.572 - 3.72e-196
+Blosum62+F+G4    -13257.932   26769.864 - 1.23e-201   26817.746 - 9.79e-201   27365.916 - 4.23e-197
+Blosum62+F+R3    -13248.786   26757.572 - 5.74e-199   26807.957 - 1.31e-198   27367.704 - 1.73e-197
+Blosum62+F+R4    -13242.401   26748.802 - 4.61e-197   26800.897 - 4.46e-197   27368.321 - 1.27e-197
+mtVer+R4         -13358.135   26942.269 - 4.5e-239   26979.447 - 7.55e-236   27472.615 - 2.87e-220
+mtVer+R3         -13367.277   26956.554 - 3.56e-242   26992.330 - 1.2e-238   27477.513 - 2.48e-221
+mtVer+I+G4       -13380.045   26978.090 - 7.49e-247   27012.495 - 5.03e-243   27489.663 - 5.69e-224
+mtVer+G4         -13390.903   26997.807 - 3.92e-251   27031.538 - 3.69e-247   27504.686 - 3.11e-227
+mtMet+R3         -13401.665   27025.330 - 4.13e-257   27061.105 - 1.4e-253   27546.289 - 2.88e-236
+mtMet+R4         -13396.397   27018.793 - 1.09e-255   27055.971 - 1.82e-252   27549.139 - 6.92e-237
+mtMet+I+G4       -13412.454   27042.908 - 6.3e-261   27077.312 - 4.24e-257   27554.480 - 4.79e-238
+mtMet+G4         -13423.385   27062.770 - 3.06e-265   27096.501 - 2.88e-261   27569.649 - 2.44e-241
+mtART+F+R4       -13439.019   27142.038 - 1.88e-282   27194.133 - 1.82e-282   27761.557 - 5.18e-283
+mtART+F+R3       -13446.672   27153.344 - 6.59e-285   27203.728 - 1.5e-284   27763.476 - 1.98e-283
+mtREV+R3         -13526.215   27274.429 - 3.35e-311   27310.205 - 1.14e-307   27795.388 - 2.33e-290
+mtART+F+I+G4     -13469.464   27194.928 - 6.15e-294   27243.636 - 3.24e-293   27795.674 - 2.02e-290
+mtREV+R4         -13520.010   27266.020 - 2.25e-309   27303.197 - 3.77e-306   27796.366 - 1.43e-290
+mtREV+I+G4       -13535.083   27288.165 - 3.49e-314   27322.570 - 2.34e-310   27799.737 - 2.65e-291
+mtREV+G4         -13547.349   27310.698 - 4.46e-319   27344.428 - 4.2e-315   27817.577 - 3.55e-295
+mtART+F+G4       -13488.738   27231.477 - 7.12e-302   27279.359 - 5.66e-301   27827.529 - 2.45e-297
+mtInv+R3         -13576.073   27374.145 -        0   27409.921 -        0   27895.104 - 5.19e-312
+mtInv+R4         -13571.402   27368.803 -        0   27405.981 -        0   27899.149 - 6.87e-313
+mtInv+I+G4       -13586.714   27391.428 -        0   27425.832 -        0   27903.000 -   1e-313
+mtZOA+R4         -13579.363   27384.725 -        0   27421.903 -        0   27915.071 - 2.39e-316
+mtZOA+R3         -13586.352   27394.703 -        0   27430.479 -        0   27915.662 - 1.78e-316
+mtZOA+I+G4       -13593.448   27404.895 -        0   27439.300 -        0   27916.467 - 1.19e-316
+mtInv+G4         -13597.364   27410.729 -        0   27444.459 -        0   27917.608 - 6.74e-317
+mtZOA+G4         -13604.963   27425.927 -        0   27459.657 -        0   27932.806 - 3.37e-320
+mtMAM+R4         -13597.596   27421.192 -        0   27458.369 -        0   27951.537 - 4.94e-324
+mtMAM+I+G4       -13623.917   27465.833 -        0   27500.238 -        0   27977.405 -        0
+mtMAM+R3         -13620.085   27462.171 -        0   27497.946 -        0   27983.130 -        0
+mtMAM+G4         -13641.243   27498.487 -        0   27532.217 -        0   28005.366 -        0
+LG               -13761.129   27736.257 -        0   27769.322 -        0   28238.443 -        0
+mtART+R4         -13924.026   28074.053 -        0   28111.230 -        0   28604.398 -        0
+mtART+I+G4       -13946.844   28111.688 -        0   28146.092 -        0   28623.260 -        0
+mtART+R3         -13945.822   28113.645 -        0   28149.420 -        0   28634.604 -        0
+mtART+G4         -13959.664   28135.328 -        0   28169.058 -        0   28642.207 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HIVb+F+R3
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0596
+  pi(R) = 0.0440
+  pi(N) = 0.0573
+  pi(D) = 0.0537
+  pi(C) = 0.0102
+  pi(Q) = 0.0415
+  pi(E) = 0.0813
+  pi(G) = 0.0528
+  pi(H) = 0.0198
+  pi(I) = 0.0474
+  pi(L) = 0.0894
+  pi(K) = 0.0622
+  pi(M) = 0.0333
+  pi(F) = 0.0505
+  pi(P) = 0.0464
+  pi(S) = 0.0642
+  pi(T) = 0.0560
+  pi(W) = 0.0281
+  pi(Y) = 0.0428
+  pi(V) = 0.0594
+
+Model of rate heterogeneity: FreeRate with 3 categories
+Site proportion and rates:  (0.6216,0.1710) (0.3271,1.8264) (0.0513,5.7770)
+
+ Category  Relative_rate  Proportion
+  1         0.1710         0.6216
+  2         1.8264         0.3271
+  3         5.7770         0.0513
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -12784.0832 (s.e. 442.1516)
+Unconstrained log-likelihood (without tree): -4841.1606
+Number of free parameters (#branches + #model parameters): 130
+Akaike information criterion (AIC) score: 25828.1664
+Corrected Akaike information criterion (AICc) score: 25878.5511
+Bayesian information criterion (BIC) score: 26438.2985
+
+Total tree length (sum of branch lengths): 2.6522
+Sum of internal branch lengths: 1.0901 (41.1008% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'partial_Taphozous_perforatus_ace2' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-------partial_Taphozous_perforatus_ace2
+|
+|                                            +---------Rousettus_leschenaultii_ace2
+|                                         +--| (91)
+|                                         |  +-----Epomophorus_wahlbergi_ace2
+|                                      +--| (69)
+|                                      |  +-------Cynopterus_sphinx_ace2
+|                                   +--| (55)
+|                                   |  +---Dobsonia_viridis_ace2
+|                                +--| (44)
+|                                |  +------Syconycteris_australis_ace2
+|            +-------------------| (100)
+|            |                   +---Pteropus_lylei_ace2
+|         +--| (66)
+|         |  |          +-------------------------partial_Thyroptera_tricolor_ace2
+|         |  +----------| (100)
+|         |             |                    +---------------Lonchophylla_robusta_ace2
+|         |             |                 +--| (89)
+|         |             |                 |  +-------Phyllostomus_hastatus_ace2
+|         |             |              +--| (47)
+|         |             |              |  |           +--Carollia_castanea_ace2
+|         |             |              |  |     +-----| (100)
+|         |             |              |  |     |     |   +--Carollia_perspicillata_ace2
+|         |             |              |  |     |     +---| (100)
+|         |             |              |  |     |         +--Carollia_sowelli_ace2
+|         |             |              |  |  +--| (42)
+|         |             |              |  |  |  |      +--Artibeus_hartii_ace2
+|         |             |              |  |  |  |   +--| (97)
+|         |             |              |  |  |  |   |  |     +--Artibeus_jamaicensis_ace2
+|         |             |              |  |  |  |   |  |  +--| (98)
+|         |             |              |  |  |  |   |  |  |  +--Artibeus_lituratus_ace2
+|         |             |              |  |  |  |   |  +--| (100)
+|         |             |              |  |  |  |   |     |  +**Artibeus_glaucus_watsoni_ace2
+|         |             |              |  |  |  |   |     +--| (100)
+|         |             |              |  |  |  |   |        +**Artibeus_phaeotis_ace2
+|         |             |              |  |  |  +---| (100)
+|         |             |              |  |  |      |     +--Uroderma_bilobatum_ace2
+|         |             |              |  |  |      |  +--| (62)
+|         |             |              |  |  |      |  |  |  +--Platyrrhinus_vittatus_ace2
+|         |             |              |  |  |      |  |  +--| (93)
+|         |             |              |  |  |      |  |     +--Platyrrhinus_helleri_ace2
+|         |             |              |  |  |      +--| (69)
+|         |             |              |  |  |         |  +--Chiroderma_villosum_ace2
+|         |             |              |  |  |         +--| (100)
+|         |             |              |  |  |            +**Chiroderma_salvini_ace2
+|         |             |              |  +--| (79)
+|         |             |              |     |      +--Sturnira_ludovici_ace2
+|         |             |              |     |   +--| (92)
+|         |             |              |     |   |  +**Sturnira_hondurensis_ace2
+|         |             |              |     +---| (100)
+|         |             |              |         +--Sturnira_parvidens_ace2
+|         |             |           +--| (44)
+|         |             |           |  +---Vampyrum_spectrum_ace2
+|         |             |        +--| (69)
+|         |             |        |  |            +--Glossophaga_soricina_ace2
+|         |             |        |  |    +-------| (100)
+|         |             |        |  |    |       +--Glossophaga_commissarisi_ace2
+|         |             |        |  +----| (100)
+|         |             |        |       |  +--Anoura_cultrata_ace2
+|         |             |        |       +--| (100)
+|         |             |        |          |  +**Hylonycteris_underwoodi_ace2
+|         |             |        |          +--| (100)
+|         |             |        |             +--Anoura_geoffroyi_ace2
+|         |             +--------| (100)
+|         |                      |          +--------Micronycteris_schmidtorum_ace2
+|         |                      |       +--| (54)
+|         |                      |       |  +----Micronycteris_hirsuta_ace2
+|         |                      +-------| (100)
+|         |                              +-----Micronycteris_microtis_ace2
+|      +--| (78)
+|      |  |                             +------------------partial_Pipistrellus_javanicus_ace2
+|      |  |                         +---| (100)
+|      |  |                         |   |  +-------Tylonycteris_robustula_ace2
+|      |  |                         |   +--| (77)
+|      |  |                         |      +---Afronycteris_nana_ace2
+|      |  |                      +--| (45)
+|      |  |                      |  +----------Antrozous_pallidus_ace2
+|      |  |                   +--| (32)
+|      |  |                   |  +--Eptesicus_brasiliensis_ace2
+|      |  |                +--| (85)
+|      |  |                |  +------------partial_Aeorestes_cinereus_ace2
+|      |  |             +--| (82)
+|      |  |             |  |       +--Scotophilus_kuhlii_ace2
+|      |  |             |  +-------| (100)
+|      |  |             |          +--Scotophilus_dinganii_ace2
+|      |  +-------------| (100)
+|      |                |  +-------Kerivoula_pellucida_ace2
+|      |                +--| (89)
+|      |                   |  +--Myotis_tricolor_ace2
+|      |                   +--| (100)
+|      |                      |  +**Myotis_riparius_ace2
+|      |                      +--| (100)
+|      |                         +--Myotis_keaysi_ace2
++------| (93)
+|      |                 +-------Centronycteris_centralis_ace2
+|      |              +--| (88)
+|      |              |  +----------Saccopteryx_bilineata_ace2
+|      |          +---| (99)
+|      |          |   +-----Rhynchonycteris_naso_ace2
+|      |       +--| (64)
+|      |       |  +---------Balantiopteryx_plicata_ace2
+|      +-------| (100)
+|              |  +--------------Coleura_afra_ace2
+|              +--| (98)
+|                 +--------Emballonura_alecto_ace2
+|
+|  +--Taphozous_melanopogon_ace2
++--| (98)
+   +--Taphozous_theobaldi_ace2
+
+Tree in newick format:
+
+(partial_Taphozous_perforatus_ace2:0.0453557697,((((((((Rousettus_leschenaultii_ace2:0.0576609644,Epomophorus_wahlbergi_ace2:0.0335053266)91:0.0139800211,Cynopterus_sphinx_ace2:0.0474356173)69:0.0093382565,Dobsonia_viridis_ace2:0.0231964683)55:0.0055382338,Syconycteris_australis_ace2:0.0394040146)44:0.0045960945,Pteropus_lylei_ace2:0.0245609433)100:0.1117084978,(partial_Thyroptera_tricolor_ace2:0.1420692283,(((((Lonchophylla_robusta_ace2:0.0890078367,Phyllostomus_hastatus_ace2:0.0435408411)89:0.0215607256,(((Carollia_castanea_ace2:0.0065640288,(Carollia_perspicillata_ace2:0.0107096400,Carollia_sowelli_ace2:0.0032458474)100:0.0233981351)100:0.0345034583,((Artibeus_hartii_ace2:0.0147508400,((Artibeus_jamaicensis_ace2:0.0080072930,Artibeus_lituratus_ace2:0.0013450242)98:0.0053980505,(Artibeus_glaucus_watsoni_ace2:0.0000010520,Artibeus_phaeotis_ace2:0.0000010520)100:0.0026650745)100:0.0080822642)97:0.0069030193,((Uroderma_bilobatum_ace2:0.0122463473,(Platyrrhinus_vittatus_ace2:0.0040860890,Platyrrhinus_helleri_ace2:0.0052127326)93:0.0065024531)62:0.0027972852,(Chiroderma_villosum_ace2:0.0064449886,Chiroderma_salvini_ace2:0.0000010520)100:0.0105249408)69:0.0016537321)100:0.0230207462)42:0.0036410413,((Sturnira_ludovici_ace2:0.0061799282,Sturnira_hondurensis_ace2:0.0000027542)92:0.0029263053,Sturnira_parvidens_ace2:0.0051441697)100:0.0253954432)79:0.0083436798)47:0.0036350019,Vampyrum_spectrum_ace2:0.0262116867)44:0.0082032483,((Glossophaga_soricina_ace2:0.0100959012,Glossophaga_commissarisi_ace2:0.0046330101)100:0.0479247872,(Anoura_cultrata_ace2:0.0169628898,(Hylonycteris_underwoodi_ace2:0.0000010520,Anoura_geoffroyi_ace2:0.0017023488)100:0.0212298554)100:0.0170927174)100:0.0300369654)69:0.0142915210,((Micronycteris_schmidtorum_ace2:0.0507122559,Micronycteris_hirsuta_ace2:0.0294630090)54:0.0101385891,Micronycteris_microtis_ace2:0.0353109174)100:0.0444817465)100:0.0510311322)100:0.0611904375)66:0.0195903639,((((((partial_Pipistrellus_javanicus_ace2:0.1054876553,(Tylonycteris_robustula_ace2:0.0486735727,Afronycteris_nana_ace2:0.0219681468)77:0.0055177596)100:0.0219768668,Antrozous_pallidus_ace2:0.0619493524)45:0.0071119174,Eptesicus_brasiliensis_ace2:0.0198725257)32:0.0070483531,partial_Aeorestes_cinereus_ace2:0.0732025343)85:0.0085474334,(Scotophilus_kuhlii_ace2:0.0085644499,Scotophilus_dinganii_ace2:0.0062593720)100:0.0481652994)82:0.0123143782,(Kerivoula_pellucida_ace2:0.0483118516,(Myotis_tricolor_ace2:0.0062725201,(Myotis_riparius_ace2:0.0000010520,Myotis_keaysi_ace2:0.0039621726)100:0.0174716918)100:0.0152188165)89:0.0143245879)100:0.0802441678)78:0.0153246329,((((Centronycteris_centralis_ace2:0.0478340970,Saccopteryx_bilineata_ace2:0.0650384926)88:0.0153189657,Rhynchonycteris_naso_ace2:0.0335157179)99:0.0268237367,Balantiopteryx_plicata_ace2:0.0596749290)64:0.0071633107,(Coleura_afra_ace2:0.0815276820,Emballonura_alecto_ace2:0.0530260093)98:0.0203900162)100:0.0485585749)93:0.0416830131,(Taphozous_melanopogon_ace2:0.0063232384,Taphozous_theobaldi_ace2:0.0031968518)98:0.0181949093);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -12784.086157
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------partial_Taphozous_perforatus_ace2
+|
+|                                            +---------Rousettus_leschenaultii_ace2
+|                                         +--| (91)
+|                                         |  +-----Epomophorus_wahlbergi_ace2
+|                                      +--| (69)
+|                                      |  +-------Cynopterus_sphinx_ace2
+|                                   +--| (55)
+|                                   |  +---Dobsonia_viridis_ace2
+|                                +--| (44)
+|                                |  +------Syconycteris_australis_ace2
+|            +-------------------| (100)
+|            |                   +---Pteropus_lylei_ace2
+|         +--| (66)
+|         |  |          +-------------------------partial_Thyroptera_tricolor_ace2
+|         |  +----------| (100)
+|         |             |                    +---------------Lonchophylla_robusta_ace2
+|         |             |                 +--| (89)
+|         |             |                 |  +-------Phyllostomus_hastatus_ace2
+|         |             |              +--| (47)
+|         |             |              |  |           +--Carollia_castanea_ace2
+|         |             |              |  |     +-----| (100)
+|         |             |              |  |     |     |   +--Carollia_perspicillata_ace2
+|         |             |              |  |     |     +---| (100)
+|         |             |              |  |     |         +--Carollia_sowelli_ace2
+|         |             |              |  |  +--| (42)
+|         |             |              |  |  |  |      +--Artibeus_hartii_ace2
+|         |             |              |  |  |  |   +--| (97)
+|         |             |              |  |  |  |   |  |     +--Artibeus_jamaicensis_ace2
+|         |             |              |  |  |  |   |  |  +--| (98)
+|         |             |              |  |  |  |   |  |  |  +--Artibeus_lituratus_ace2
+|         |             |              |  |  |  |   |  +--| (100)
+|         |             |              |  |  |  |   |     |  +--Artibeus_glaucus_watsoni_ace2
+|         |             |              |  |  |  |   |     +--| (100)
+|         |             |              |  |  |  |   |        +--Artibeus_phaeotis_ace2
+|         |             |              |  |  |  +---| (100)
+|         |             |              |  |  |      |     +--Uroderma_bilobatum_ace2
+|         |             |              |  |  |      |  +--| (62)
+|         |             |              |  |  |      |  |  |  +--Platyrrhinus_vittatus_ace2
+|         |             |              |  |  |      |  |  +--| (93)
+|         |             |              |  |  |      |  |     +--Platyrrhinus_helleri_ace2
+|         |             |              |  |  |      +--| (69)
+|         |             |              |  |  |         |  +--Chiroderma_villosum_ace2
+|         |             |              |  |  |         +--| (100)
+|         |             |              |  |  |            +--Chiroderma_salvini_ace2
+|         |             |              |  +--| (79)
+|         |             |              |     |      +--Sturnira_ludovici_ace2
+|         |             |              |     |   +--| (92)
+|         |             |              |     |   |  +--Sturnira_hondurensis_ace2
+|         |             |              |     +---| (100)
+|         |             |              |         +--Sturnira_parvidens_ace2
+|         |             |           +--| (44)
+|         |             |           |  +---Vampyrum_spectrum_ace2
+|         |             |        +--| (69)
+|         |             |        |  |            +--Glossophaga_soricina_ace2
+|         |             |        |  |    +-------| (100)
+|         |             |        |  |    |       +--Glossophaga_commissarisi_ace2
+|         |             |        |  +----| (100)
+|         |             |        |       |  +--Anoura_cultrata_ace2
+|         |             |        |       +--| (100)
+|         |             |        |          |  +--Hylonycteris_underwoodi_ace2
+|         |             |        |          +--| (100)
+|         |             |        |             +--Anoura_geoffroyi_ace2
+|         |             +--------| (100)
+|         |                      |          +--------Micronycteris_schmidtorum_ace2
+|         |                      |       +--| (54)
+|         |                      |       |  +----Micronycteris_hirsuta_ace2
+|         |                      +-------| (100)
+|         |                              +-----Micronycteris_microtis_ace2
+|      +--| (78)
+|      |  |                             +------------------partial_Pipistrellus_javanicus_ace2
+|      |  |                         +---| (100)
+|      |  |                         |   |  +-------Tylonycteris_robustula_ace2
+|      |  |                         |   +--| (77)
+|      |  |                         |      +---Afronycteris_nana_ace2
+|      |  |                      +--| (45)
+|      |  |                      |  +----------Antrozous_pallidus_ace2
+|      |  |                   +--| (32)
+|      |  |                   |  +--Eptesicus_brasiliensis_ace2
+|      |  |                +--| (85)
+|      |  |                |  +------------partial_Aeorestes_cinereus_ace2
+|      |  |             +--| (82)
+|      |  |             |  |       +--Scotophilus_kuhlii_ace2
+|      |  |             |  +-------| (100)
+|      |  |             |          +--Scotophilus_dinganii_ace2
+|      |  +-------------| (100)
+|      |                |  +-------Kerivoula_pellucida_ace2
+|      |                +--| (89)
+|      |                   |  +--Myotis_tricolor_ace2
+|      |                   +--| (100)
+|      |                      |  +--Myotis_riparius_ace2
+|      |                      +--| (100)
+|      |                         +--Myotis_keaysi_ace2
++------| (93)
+|      |                 +-------Centronycteris_centralis_ace2
+|      |              +--| (88)
+|      |              |  +----------Saccopteryx_bilineata_ace2
+|      |          +---| (99)
+|      |          |   +-----Rhynchonycteris_naso_ace2
+|      |       +--| (64)
+|      |       |  +----------Balantiopteryx_plicata_ace2
+|      +-------| (100)
+|              |  +--------------Coleura_afra_ace2
+|              +--| (98)
+|                 +--------Emballonura_alecto_ace2
+|
+|  +--Taphozous_melanopogon_ace2
++--| (98)
+   +--Taphozous_theobaldi_ace2
+
+
+Consensus tree in newick format: 
+
+(partial_Taphozous_perforatus_ace2:0.0452938481,((((((((Rousettus_leschenaultii_ace2:0.0575770093,Epomophorus_wahlbergi_ace2:0.0334521474)91:0.0139605214,Cynopterus_sphinx_ace2:0.0473579588)69:0.0093284624,Dobsonia_viridis_ace2:0.0231618994)55:0.0055303422,Syconycteris_australis_ace2:0.0393389674)44:0.0045899960,Pteropus_lylei_ace2:0.0245246878)100:0.1115330649,(partial_Thyroptera_tricolor_ace2:0.1418188701,(((((Lonchophylla_robusta_ace2:0.0888311209,Phyllostomus_hastatus_ace2:0.0434528121)89:0.0215270527,(((Carollia_castanea_ace2:0.0065513060,(Carollia_perspicillata_ace2:0.0106885992,Carollia_sowelli_ace2:0.0032388316)100:0.0233522748)100:0.0344367227,((Artibeus_hartii_ace2:0.0147196371,((Artibeus_jamaicensis_ace2:0.0079907810,Artibeus_lituratus_ace2:0.0013421943)98:0.0053868734,(Artibeus_glaucus_watsoni_ace2:0.0000022107,Artibeus_phaeotis_ace2:0.0000022107)100:0.0026596667)100:0.0080666466)97:0.0068887047,((Uroderma_bilobatum_ace2:0.0122223572,(Platyrrhinus_vittatus_ace2:0.0040785701,Platyrrhinus_helleri_ace2:0.0052023538)93:0.0064894319)62:0.0027921513,(Chiroderma_villosum_ace2:0.0064321146,Chiroderma_salvini_ace2:0.0000022107)100:0.0105040678)69:0.0016512667)100:0.0229761117)42:0.0036348697,((Sturnira_ludovici_ace2:0.0061683834,Sturnira_hondurensis_ace2:0.0000022107)92:0.0029210985,Sturnira_parvidens_ace2:0.0051343019)100:0.0253457339)79:0.0083309657)47:0.0036308704,Vampyrum_spectrum_ace2:0.0261631040)44:0.0082002033,((Glossophaga_soricina_ace2:0.0100790684,Glossophaga_commissarisi_ace2:0.0046244312)100:0.0478393296,(Anoura_cultrata_ace2:0.0169325365,(Hylonycteris_underwoodi_ace2:0.0000022107,Anoura_geoffroyi_ace2:0.0016991932)100:0.0211918864)100:0.0170614992)100:0.0299783395)69:0.0142741446,((Micronycteris_schmidtorum_ace2:0.0506259780,Micronycteris_hirsuta_ace2:0.0294088766)54:0.0101222982,Micronycteris_microtis_ace2:0.0352478599)100:0.0444112076)100:0.0509660563)100:0.0610925349)66:0.0195642591,((((((partial_Pipistrellus_javanicus_ace2:0.1053849576,(Tylonycteris_robustula_ace2:0.0486336931,Afronycteris_nana_ace2:0.0219470504)77:0.0055140674)100:0.0219600259,Antrozous_pallidus_ace2:0.0618899919)45:0.0071070594,Eptesicus_brasiliensis_ace2:0.0198550607)32:0.0070439424,partial_Aeorestes_cinereus_ace2:0.0731240229)85:0.0085417311,(Scotophilus_kuhlii_ace2:0.0085555535,Scotophilus_dinganii_ace2:0.0062524373)100:0.0481135036)82:0.0123023587,(Kerivoula_pellucida_ace2:0.0482584285,(Myotis_tricolor_ace2:0.0062669585,(Myotis_riparius_ace2:0.0000022107,Myotis_keaysi_ace2:0.0039576945)100:0.0174518429)100:0.0152030360)89:0.0143132027)100:0.0801442401)78:0.0153219804,((((Centronycteris_centralis_ace2:0.0477745748,Saccopteryx_bilineata_ace2:0.0649549673)88:0.0153084020,Rhynchonycteris_naso_ace2:0.0334759474)99:0.0267902433,Balantiopteryx_plicata_ace2:0.0595960348)64:0.0071608747,(Coleura_afra_ace2:0.0814144732,Emballonura_alecto_ace2:0.0529564018)98:0.0203718437)100:0.0485002245)93:0.0416390590,(Taphozous_melanopogon_ace2:0.0063137954,Taphozous_theobaldi_ace2:0.0031929182)98:0.0181609333);
+
+TIME STAMP
+----------
+
+Date and time: Thu Feb 15 15:21:40 2024
+Total CPU time used: 1202.49233 seconds (0h:20m:2s)
+Total wall-clock time used: 102.803159 seconds (0h:1m:42s)
+
