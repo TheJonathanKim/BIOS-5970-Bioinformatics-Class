@@ -1,0 +1,10 @@
+1. makeblastdb -in '/home/jonathankim/Downloads/mystery_transcripts.fasta' -dbtype nucl -out '/home/jonathankim/Downloads/mystery_transcripts_fasta_db'
+2. makeblastdb -in '/home/jonathankim/Downloads/mystery_proteins.fasta' -dbtype prot -out '/home/jonathankim/Downloads/mystery_protein_fasta_db'
+3. blastn -db /home/jonathankim/Downloads/mystery_transcripts_fasta_db -query /home/jonathankim/Downloads/mystery_nucleotide_query.fasta -evalue 1e-3 -max_hsps 5 -outfmt 7 -out /home/jonathankim/Downloads/mystery_transcript_output.txt 
+4. The most similar search is T010027234997 with a similarity of 91.965% sequence identiy. 
+5. grep -h '[[:digit:]]' mystery_transcript_output.txt| awk 'int($NF) > 90 {print $2}' >> most_similar.
+6. blastp -db /home/jonathankim/Downloads/mystery_protein_fasta_db -query /home/jonathankim/Downloads/mystery_protein_query.fasta -evalue 1e-5 -max_hsps 15 -outfmt 7 -out /home/jonathankim/Downloads/mystery_protein_output.txt
+7. According to evalue which is the highest at 0, the best hits are P010027090796, P010027090798, P010027073865, and P010027077695.
+8. Coffea arabica
+9. Gardenia jasminoides
+10. catalase
