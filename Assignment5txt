@@ -1,3 +1,0 @@
-3. iqtree2 -nt 12 -bnni -s infile.txt -st AA --sprrad 6 -B 1000 --prefix output
-4. The Flying Fox (Pteropus lylei) is closely related in a clade with the following species: Dobsonia viridis, Cynopterus sphinx, Epomophorus wahlbergi, and Rousettus leschenaultii.
-5. This protein phylogeny of bats could be useful today due to the recent pandemic and the connection of coronaviruses to zoonotic illnesses from mammals such as bats. The phylogeny based on amino acids could help researchers to infer which species or clades of bats were most likely carriers of the virus(es). 
