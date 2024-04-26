@@ -1,0 +1,4 @@
+3. MUSCLE command: muscle -in infile.fasta -seqtype protein -maxiters 16 -maxmb 30000000 -hydro 5 -hydrofactor 1.2 -log logfile.txt -weight1 clustalw -distance1 kmer6_6 -cluster1 upgmb -sueff 0.1 -root1 pseudo -maxtrees 1 -weight2 clustalw -distance2 pctidkimura -cluster2 upgmb -sueff 0.1 -root2 pseudo -objscore sp -noanchors -out output.fasta 
+	RAxML command: iqtree2 -nt 12 -bnni -s infile.txt -st AA --sprrad 6 -B 1000 --prefix output (MODIFIED)
+4. The Flying Fox (Pteropus lylei) is closely related in a clade with the following species: Dobsonia viridis, Cynopterus sphinx, Epomophorus wahlbergi, and Rousettus leschenaultii.
+5. This protein phylogeny of bats could be useful today due to the recent pandemic and the connection of coronaviruses to zoonotic illnesses from mammals such as bats. The phylogeny based on amino acids could help researchers to infer which species or clades of bats were most likely carriers of the virus(es). 
